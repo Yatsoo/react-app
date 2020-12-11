@@ -14,7 +14,7 @@ function App() {
         <div className="source-code">
           <small>
             <a
-              href="https://github.com/Yatsoo/WeatherAppInclForecast"
+              href="https://github.com/Yatsoo/react-app"
               target="_blank"
               rel="noreferrer"
             >
