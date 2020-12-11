@@ -1,38 +1,40 @@
-.App {
+body {
+  font-family: "Lora", serif;
+}
+
+.container {
+  background-image: url("https://image.freepik.com/free-vector/sky-heaven-nature-sunset-sunrise_107791-583.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  border: 1px solid #9bc7ec;
+  border-radius: 20px;
+  background-color: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  max-width: 50%;
+  margin: 15px auto 0;
+}
+
+.weeklytemperature .card,
+.card-header,
+.card-footer {
+  background-color: transparent;
+  border: transparent;
+}
+
+.weeklytemperature .card img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weeklytemperature .col {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.source-code {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
