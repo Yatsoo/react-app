@@ -95,65 +95,65 @@ export default function Weather() {
 
       <hr />
 
-      <div class="weeklytemperature">
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center">
-              <div class="card-header">Saturday</div>
+      <div className="weeklytemperature">
+        <div className="row">
+          <div className="col d-flex justify-content-center">
+            <div className="card text-center">
+              <div className="card-header">Saturday</div>
               <img
                 src="https://img.icons8.com/nolan/64/smiling-sun.png"
-                class="card-img-top"
+                className="card-img-top"
                 alt="sun shining"
               />
-              <div class="card-footer">23°C</div>
+              <div className="card-footer">23°C</div>
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center">
-              <div class="card-header">Sunday</div>
+          <div className="col d-flex justify-content-center">
+            <div className="card text-center">
+              <div className="card-header">Sunday</div>
               <img
                 src="https://img.icons8.com/nolan/64/partly-cloudy-day.png"
-                class="card-img-top"
+                className="card-img-top"
                 alt="cloud sun"
               />
-              <div class="card-footer">19°C</div>
+              <div className="card-footer">19°C</div>
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center">
-              <div class="card-header">Monday</div>
+          <div className="col d-flex justify-content-center">
+            <div className="card text-center">
+              <div className="card-header">Monday</div>
               <img
                 src="https://img.icons8.com/nolan/64/clouds.png"
-                class="card-img-top"
+                className="card-img-top"
                 alt="clouds"
               />
-              <div class="card-footer">21°C</div>
+              <div className="card-footer">21°C</div>
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center">
-              <div class="card-header">Tuesday</div>
+          <div className="col d-flex justify-content-center">
+            <div className="card text-center">
+              <div className="card-header">Tuesday</div>
               <img
                 src="https://img.icons8.com/nolan/64/partly-cloudy-day.png"
-                class="card-img-top"
+                className="card-img-top"
                 alt="partly cloudy"
               />
-              <div class="card-footer">17°C</div>
+              <div className="card-footer">17°C</div>
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center">
-              <div class="card-header">Wednesday</div>
+          <div className="col d-flex justify-content-center">
+            <div className="card text-center">
+              <div className="card-header">Wednesday</div>
               <img
                 src="https://img.icons8.com/nolan/64/rain.png"
-                class="card-img-top"
+                className="card-img-top"
                 alt="rainy"
               />
-              <div class="card-footer">21°C</div>
+              <div className="card-footer">21°C</div>
             </div>
           </div>
         </div>
