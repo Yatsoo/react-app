@@ -24,10 +24,10 @@ export default function FormattedDate(props) {
 
   return (
     <div>
-      <h3>{day}</h3>
-      <p>
+      <h5>{day}</h5>
+      <h6>
         {hours}:{minutes}
-      </p>
+      </h6>
     </div>
   );
 }

@@ -9,7 +9,6 @@ ul {
 }
 
 input {
-  margin: 13px auto 0 110px;
   border: #aed0e9;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.7);
 }
@@ -43,8 +42,12 @@ a:hover {
 li:first-letter {
   text-transform: capitalize;
 }
+
+.searchform {
+  margin: 0px 17px;
+  text-align: center;
+}
 .searchbutton .btn {
-  margin: 13px auto 0 -11px;
   background-color: #9bc7ec;
   border: #4664fd;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.7);

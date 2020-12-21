@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./weather.css";
 
@@ -11,7 +12,6 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-
       temperature: response.data.main.temp,
       icon: "https://img.icons8.com/nolan/64/rain.png",
       description: response.data.weather[0].description,
@@ -23,6 +23,31 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="currentdayweather">
+        <div className="searchform">
+          <form className="form-inline">
+            <div className="row">
+              <div className="form-group mx-sm-3 mb-2">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter a City"
+                  autoComplete="off"
+                  autoFocus="on"
+                />
+              </div>
+              <span className="searchbutton">
+                <button
+                  type="submit"
+                  className="btn btn-primary w-100"
+                  value="Search"
+                >
+                  Search
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+        <WeatherInfo />
         <div className="card-deck">
           <div className="card text-left" style={{ maxWidth: "18rem" }}>
             <div className="card-header">
@@ -36,43 +61,21 @@ export default function Weather(props) {
                   <FormattedDate date={weatherData.date} />
                 </div>
                 <div className="col">
-                  <h3>
+                  <h5>
                     <span>{Math.round(weatherData.temperature)}°C</span>
-                  </h3>
-                  <p>
+                  </h5>
+                  <small>
                     <a href="/" className="active">
                       C{" "}
                     </a>{" "}
                     | <a href="/">F</a>
-                  </p>
+                  </small>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="card text-right searchbar">
-            <div className="card-body">
-              <form className="form-inline">
-                <div className="form-group mx-sm-3 mb-2">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Enter a City"
-                    autoComplete="off"
-                    autoFocus="on"
-                  />
-                </div>
-                <span className="searchbutton">
-                  <button
-                    type="submit"
-                    className="btn btn-primary mb-2"
-                    value="Search"
-                  >
-                    Search
-                  </button>
-                </span>
-              </form>
-            </div>
+          <div className="card text-right">
             <div className="card-body">
               <div className="extrainfo text-left">
                 <ul>
@@ -84,18 +87,27 @@ export default function Weather(props) {
                     />
                   </li>
                   <li>
-                    <span className="text-capitalize">
-                      {weatherData.description}
-                    </span>
+                    <br />
+                  </li>
+                  <li>
+                    <h6>
+                      <span className="text-capitalize">
+                        {weatherData.description}
+                      </span>
+                    </h6>
                   </li>
                   <li>
                     <hr className="line" />
                   </li>
                   <li>
-                    Humidity: <span>{weatherData.humidity}</span>%
+                    <h6>
+                      Humidity: <span>{weatherData.humidity}</span>%{" "}
+                    </h6>
                   </li>
                   <li>
-                    Wind: <span>{weatherData.wind}</span> km/h
+                    <h6>
+                      Wind: <span>{weatherData.wind}</span> km/h
+                    </h6>
                   </li>
                 </ul>
               </div>
