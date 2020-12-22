@@ -35,7 +35,12 @@ export default function WeatherInfo(props) {
         <div className="card text-right">
           <div className="card-body">
             <div className="extrainfo text-left">
+              <br />
+
               <ul>
+                <li>
+                  <hr className="line" />
+                </li>
                 <li>
                   <div className="card-img">
                     <WeatherIcon
@@ -45,18 +50,17 @@ export default function WeatherInfo(props) {
                   </div>
                 </li>
                 <li>
-                  <br />
-                </li>
-                <li>
                   <h6>
                     <span className="text-capitalize">
                       {props.data.description}
                     </span>
                   </h6>
                 </li>
+
                 <li>
                   <hr className="line" />
                 </li>
+
                 <li>
                   <h6>
                     Humidity: <span>{props.data.humidity}</span>%{" "}
