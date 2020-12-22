@@ -39,9 +39,6 @@ export default function WeatherInfo(props) {
 
               <ul>
                 <li>
-                  <hr className="line" />
-                </li>
-                <li>
                   <div className="card-img">
                     <WeatherIcon
                       code={props.data.icon}
