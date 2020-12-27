@@ -23,8 +23,8 @@ body {
   border: transparent;
 }
 
-.weeklytemperature .card img {
-  width: 50px;
+.weeklytemperature .card canvas {
+  width: 45px;
   display: block;
   margin: 0 auto;
   text-align: center;
